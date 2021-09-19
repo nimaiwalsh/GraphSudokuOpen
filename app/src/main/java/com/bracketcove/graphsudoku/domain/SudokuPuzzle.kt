@@ -10,6 +10,7 @@ import kotlin.collections.LinkedHashMap
 
 /**
  * Represents a virtual sudoku puzzle
+ * Needs to extend Serializable as we will be storing this object with an ObjectOutPutStream
  * */
 data class SudokuPuzzle(
     val boundary: Int,

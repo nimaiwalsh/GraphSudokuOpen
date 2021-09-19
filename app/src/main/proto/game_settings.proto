@@ -1,0 +1,24 @@
+/**
+Protocol Buffers are like a serialisation language
+- Very similar to JSON
+*/
+syntax = "proto3";
+
+// These two line are instructions for the ProtoBuff code generator (compiler)
+// generating java files
+option java_package = "com.bracketcove.graphsudoku";
+option java_multiple_files = true;
+
+// A Message (datatype) is just a name which groups some Data together in a structured way.
+message GameSettings {
+  // boundary is the number of sudoku squares
+  int32 boundary = 9;
+  ProtoDifficulty difficulty = 2;
+
+  enum ProtoDifficulty {
+    UNKNOWN = 0;
+    EASY = 1;
+    MEDIUM = 2;
+    HARD = 3;
+  }
+}

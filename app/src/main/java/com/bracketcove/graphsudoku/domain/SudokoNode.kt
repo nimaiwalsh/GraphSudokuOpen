@@ -14,6 +14,10 @@ import java.io.Serializable
 data class SudokoNode(
     val x: Int,
     val y: Int,
+    /**
+     * color in a graph datastructures refers to a number, in this case the value in the
+     * sudoku square
+     * */
     var color: Int = 0,
     var readOnly: Boolean = true
 ): Serializable {
