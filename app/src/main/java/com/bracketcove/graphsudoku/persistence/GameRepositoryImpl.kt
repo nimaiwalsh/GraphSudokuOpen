@@ -3,7 +3,9 @@ package com.bracketcove.graphsudoku.persistence
 import com.bracketcove.graphsudoku.domain.*
 import java.lang.Exception
 
-
+/**
+ * Combine game storage and setting storage logic
+ * */
 class GameRepositoryImpl(
     private val gameStorage: IGameDataStorage,
     private val settingsStorage: ISettingsStorage
