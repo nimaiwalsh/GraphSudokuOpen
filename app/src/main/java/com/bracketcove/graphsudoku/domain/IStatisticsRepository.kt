@@ -1,7 +1,5 @@
 package com.bracketcove.graphsudoku.domain
 
-import java.lang.Exception
-
 interface IStatisticsRepository {
     suspend fun getStatistics(
         onSuccess: (UserStatistics) -> Unit,
