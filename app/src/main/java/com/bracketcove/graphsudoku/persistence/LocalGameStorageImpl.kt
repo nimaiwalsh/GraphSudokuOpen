@@ -8,7 +8,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.*
 import java.lang.Exception
-import java.security.spec.ECField
 
 private const val FILE_NAME = "game_state.txt"
 

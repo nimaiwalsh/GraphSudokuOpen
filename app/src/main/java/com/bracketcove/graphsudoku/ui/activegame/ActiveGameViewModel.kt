@@ -9,7 +9,7 @@ import com.bracketcove.graphsudoku.domain.getHash
  * We will use Kotlins function types to create a simple/crude version publisher/subscriber (observer) pattern.
  * */
 class ActiveGameViewModel {
-    // sub is short for subject, i.e Pub-Sub pattern
+    // sub is short for subject, i.e Publisher-Subject pattern
     // Virtual representation of the board
     internal var subBoardState: ((HashMap<Int, SudokuTile>) -> Unit)? = null
     // 3 different states: 1. loading the data, 2. currently active game, 3. completed game
@@ -46,7 +46,7 @@ class ActiveGameViewModel {
                 node.x,
                 node.y,
                 node.color,
-                hasFocused = false,
+                hasFocus = false,
                 node.readOnly
             )
         }
@@ -103,7 +103,7 @@ class ActiveGameViewModel {
 }
 
 /**
- * A virtual representation of a single tile in a Sedouk puzzle
+ * A virtual representation of a single tile in a Sudoku puzzle
  * */
 class SudokuTile(
     val x: Int,
