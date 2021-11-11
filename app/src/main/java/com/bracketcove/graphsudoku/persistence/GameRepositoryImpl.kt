@@ -10,6 +10,7 @@ class GameRepositoryImpl(
     private val gameStorage: IGameDataStorage,
     private val settingsStorage: ISettingsStorage
 ) : IGameRepository {
+
     override suspend fun saveGame(
         elapsedTime: Long,
         onSuccess: (Unit) -> Unit,

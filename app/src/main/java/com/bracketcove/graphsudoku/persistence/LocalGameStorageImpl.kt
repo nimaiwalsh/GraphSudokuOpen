@@ -15,6 +15,7 @@ class LocalGameStorageImpl(
     fileStorageDirectory: String,
     private val pathToStorageFile: File = File(fileStorageDirectory, FILE_NAME)
 ) : IGameDataStorage {
+
     override suspend fun updateGame(game: SudokuPuzzle): GameStorageResult =
         withContext(Dispatchers.IO) {
             try {

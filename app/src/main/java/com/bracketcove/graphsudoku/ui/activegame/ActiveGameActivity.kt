@@ -9,7 +9,7 @@ import com.bracketcove.graphsudoku.common.makeToast
 import com.bracketcove.graphsudoku.ui.GraphSudokuTheme
 
 /**
- * Feature specific container
+ * Feature specific container setup as a container for composable
  */
 class ActiveGameActivity : AppCompatActivity(), ActiveGameContainer {
 

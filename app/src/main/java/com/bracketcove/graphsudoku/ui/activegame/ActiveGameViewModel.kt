@@ -55,9 +55,9 @@ class ActiveGameViewModel {
 
         if (isComplete) {
             isCompleteState = true
-            contentState = ActiveGameContentState.COMPLETE
+            contentState = ActiveGameScreenState.COMPLETE
         } else {
-            contentState = ActiveGameContentState.ACTIVE
+            contentState = ActiveGameScreenState.ACTIVE
         }
 
         boundary = puzzle.boundary
