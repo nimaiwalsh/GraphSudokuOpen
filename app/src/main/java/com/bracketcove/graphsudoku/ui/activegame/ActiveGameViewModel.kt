@@ -9,7 +9,8 @@ import com.bracketcove.graphsudoku.domain.getHash
  * We will use Kotlins function types to create a simple/crude version publisher/subscriber (observer) pattern.
  * */
 class ActiveGameViewModel {
-    // sub is short for subject, i.e Publisher-Subject pattern
+    // sub is short for subject, i.e Publisher-Subject pattern. Use
+
     // Virtual representation of the board
     internal var subBoardState: ((HashMap<Int, SudokuTile>) -> Unit)? = null
     // 3 different states: 1. loading the data, 2. currently active game, 3. completed game

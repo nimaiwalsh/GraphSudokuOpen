@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import com.bracketcove.graphsudoku.R
 import com.bracketcove.graphsudoku.common.makeToast
 import com.bracketcove.graphsudoku.ui.GraphSudokuTheme
+import com.bracketcove.graphsudoku.ui.activegame.buildlogic.buildActiveGameLogic
 
 /**
  * Feature specific container setup as a container for composable
