@@ -35,3 +35,5 @@ internal val Difficulty.toLocalizedResource: Int
             Difficulty.HARD -> R.string.hard
         }
     }
+
+internal fun Int.sqrt() = kotlin.math.sqrt(this.toDouble()).toInt()

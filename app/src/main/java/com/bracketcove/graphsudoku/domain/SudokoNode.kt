@@ -28,7 +28,7 @@ data class SudokoNode(
 }
 
 internal fun getHash(x: Int, y: Int): Int {
-    // * 100 ensures every single tile has a unqiue hash code
+    // * 100 ensures every single tile has a unique hash code
     val newX = x*100
     return "$newX$y".toInt()
 }
